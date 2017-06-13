@@ -1,0 +1,1 @@
+0   -   isInt() does not work quite right
