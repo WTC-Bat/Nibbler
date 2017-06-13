@@ -30,6 +30,12 @@ static bool isInt(char *str)
 
 static bool checkArgs(int argc, char **argv)
 {
+    /*
+    **  Args:
+    **  -w      -   Width integer
+    **  -h      -   Height integer
+    **  -lib    -   starting library
+    */
     if (argc == 3)
     {
         std::cout << "3 args" << std::endl;
