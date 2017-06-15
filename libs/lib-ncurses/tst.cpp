@@ -20,10 +20,13 @@ int     main(void)
     // lnc.printString(toStr(lnc.getScreenMaxWidth()));
     // lnc.printString(toStr(lnc.getScreenMaxHeight()));
 
-    lnc.printString(toStr(lnc.getScreenWidth()), );
-    lnc.printString(toStr(lnc.getScreenHeight()), 5, 5);
-    lnc.printString(toStr(lnc.getScreenMaxWidth()), 5, 5);
-    lnc.printString(toStr(lnc.getScreenMaxHeight()), 5, 5);
+    lnc.printString(toStr(lnc.getScreenWidth()), 5, 5);
+    lnc.printString(toStr(lnc.getScreenHeight()), 5, 6);
+    lnc.printString(toStr(lnc.getScreenMaxWidth()), 5, 7);
+    lnc.printString(toStr(lnc.getScreenMaxHeight()), 5, 8);
+
+    // lnc.resize();
+    // getch();
 
     getch();
 

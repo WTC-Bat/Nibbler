@@ -92,6 +92,7 @@ void        LibNCurse::printString(std::string str)
 void        LibNCurse::printString(std::string str, int x, int y)
 {
     mvprintw(y, x, str.c_str());
+    refresh();
 }
 
 void        LibNCurse::_initialize(void)
@@ -113,4 +114,11 @@ void        LibNCurse::_update(void)
     wresize(stdscr, this->_screenHeight, this->_screenWidth);
     getmaxyx(stdscr, this->_screenMaxHeight, this->_screenMaxWidth);
     // resizeterm(this->_screenWidth, this->_screenHeight);
+}
+
+
+
+void        LibNCurse::resize(void)
+{
+    resizeterm(this->_screenWidth, this->_screenHeight);
 }

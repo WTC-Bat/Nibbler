@@ -15,7 +15,7 @@ class LibNCurse
         char        _snakeChar;
 
         void        _initialize(void);
-        void        _update(void);
+        void        _update(void);        
 
     public:
         LibNCurse(void);
@@ -38,6 +38,9 @@ class LibNCurse
 
         void        printString(std::string str);
         void        printString(std::string str, int x, int y);
+
+
+        void        resize(void);
 };
 
 #endif
