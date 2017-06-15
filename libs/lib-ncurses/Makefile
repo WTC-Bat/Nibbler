@@ -12,6 +12,9 @@ $(NAME):
 	clang++ -shared libncurse.o -o $(NAME)
 #	dylib	
 
+tst:
+	clang++ tst.cpp -I$(HEADD) $(SRCD)LibNCurse.cpp -lncurses -o tst
+
 clean:
 	rm -f *.o
 
